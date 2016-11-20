@@ -1,7 +1,8 @@
 package ex;
 /*
  * Date: 2016/11/14
- * Author: 1050210XX OOO
+
+ * Author: 105021036 ¾GªFªY
  */
 import java.util.Scanner;
 public class ex03 {
@@ -30,13 +31,13 @@ public class ex03 {
 				sum = sum + data[i][j];
 			}
 		}
-		a = sum/v1*v2;
+		a = sum/(v1*v2);
 		for(int i = 0;i<v1;i++){
 			for(int j = 0;j<v2;j++){
-				b = b + (data[i][j]-a);
+				b = b + (data[i][j]-a)*(data[i][j]-a);
 			}
 		}
-		c = b*b/v1*v2;
+		c = b/(v1*v2);
 		return c;}
 		public static float std2(float data [][],float v1,float v2){
 			float sum = 0;
@@ -49,13 +50,13 @@ public class ex03 {
 					sum = sum + data[i][j];
 				}
 			}
-			a = sum/v1*v2;
+			a = sum/(v1*v2);
 			for(int i = 0;i<v1;i++){
 				for(int j = 0;j<v2;j++){
-					b = b + (data[i][j]-a);
+					b = b + (data[i][j]-a)*(data[i][j]);
 				}
 			}
-			c = b*b/v1*v2;
+			c = b/(v1*v2);
 			d = (float)Math.pow(c,1/2f);
 			return d ;
 		

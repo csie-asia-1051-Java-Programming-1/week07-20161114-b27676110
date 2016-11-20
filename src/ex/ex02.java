@@ -1,6 +1,7 @@
 package ex;
 /*
  * Date: 2016/11/14
+
  * Author: 105021036 ¾GªFªY
  */
 import java.util.Scanner;
