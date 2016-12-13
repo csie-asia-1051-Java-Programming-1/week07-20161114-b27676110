@@ -8,15 +8,20 @@ public class hw01 {
 		// TODO Auto-generated method stub
 		// 先輸入大樹 再輸入小數 求兩樹最小公倍數
 		Scanner scn = new Scanner(System.in);
-		int m = scn.nextInt();
-		int n = scn.nextInt();
-		int sum = m;
-		for (int i = sum; i >= 0; i++) {
-			if (m % sum == 0) {
-				System.out.println(sum);
-			}
+		int x = scn.nextInt();
+		int y = scn.nextInt();
+		int z = scn.nextInt();
+		int n = x;
+		System.out.println(fun(x, y, z, n));
+	}
 
+	public static int fun(int x, int y, int z, int n) {
+		if (n % x == 0 && n % y == 0 && n%z == 0) {
+			return n;
+
+		} else {
+
+			return fun(x, y, z, n+1);
 		}
-
 	}
 }

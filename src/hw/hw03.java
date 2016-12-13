@@ -13,7 +13,7 @@ public class hw03 {
 			if(n==1){
 				return 1;
 			}else{
-				return n*fun(n-1);
+				return n*fun(n-1); 
 			}
 
 	}

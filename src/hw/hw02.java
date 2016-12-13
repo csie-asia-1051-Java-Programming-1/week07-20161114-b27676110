@@ -7,14 +7,14 @@ public class hw02 {
 		Scanner scn = new Scanner(System.in);
 		int n = scn.nextInt();
 		int k =0;
-		System.out.println(fun(n,k));}
+		System.out.println(fun(n));}
 	
-	public static int fun(int v,int k){
+	public static int fun(int v){
 		
 		if(v==0){
-			return k;
+			return 0;
 		}else{
-			return fun(v/10,k+1);
+			return 1+fun(v/10);
 		}
 
 	}

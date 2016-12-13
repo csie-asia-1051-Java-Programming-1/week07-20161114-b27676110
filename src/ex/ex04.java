@@ -13,25 +13,25 @@ public class ex04 {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
 		int n = scn.nextInt();
-		System.out.println(fun(n));}
-		
-	public static int fun(int v){
-		if(v==1){
+		System.out.println(fun(n));
+	}
+
+	public static int fun(int v) {
+		if (v == 1) {
 			return 1;
-		}else{
-			
-			return	v*fun(v-1);}
-			
-		
+		} else {
+
+			return v * fun(v - 1);
+		}
 
 	}
 
 }
 
-//	if(x=1)
-//	{
-//		return 1 ;
-//	}
-//	else{
-//	((data[x]-u)*(data[x]-u))/n+((data[x-1]-u)*(data[x-1]-u))
-//	}
+// if(x=1)
+// {
+// return 1 ;
+// }
+// else{
+// ((data[x]-u)*(data[x]-u))/n+((data[x-1]-u)*(data[x-1]-u))
+// }
